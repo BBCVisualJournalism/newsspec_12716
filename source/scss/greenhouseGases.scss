@@ -1,0 +1,74 @@
+$line-color: #689c00;
+
+.newsspec_12716__greenhouse-gases-chart {
+    direction: ltr;
+}
+
+.newsspec_12716__greenhouse-gases-chart__header {
+    width: 100%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 70px;
+    margin-bottom: 0;
+}
+
+.newsspec_12716__greenhouse-gases-chart__svg-alternative {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 18px auto 0 auto;
+}
+
+.newsspec_12716__greenhouse-gases-chart__svg {
+    display: none;
+    height: 300px;
+
+    .newsspec_12716__line {
+        fill: none;
+        stroke-width: 1px;
+        stroke: $line-color;
+    }
+
+    .x-axis-ticks {
+        &:nth-child(2n+1) {
+            display: none;
+        }
+    }
+    .x-axis-tick,
+    .x-axis {
+        stroke: #404040;
+        stroke-width: 1;
+    }
+    .y-axis-ticks {
+        text {
+            fill: #727272;
+        }
+    }
+    .y-axis-tick {
+        stroke: #ededed;
+        stroke-width: 1;
+    }
+}
+
+.newsspec_12716__greenhouse-gases-chart__source { 
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding-left: 70px;
+    font-size: 0.813em;
+}
+
+@include respondMinMax (600px, false) {
+    .newsspec_12716__greenhouse-gases-chart__svg {
+        .newsspec_12716__line {
+            stroke-width: 2px;
+        }
+
+        .x-axis-ticks {
+            &:nth-child(1n+1) {
+                display: block;
+            }
+        }
+    }
+}

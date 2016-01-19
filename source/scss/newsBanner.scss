@@ -1,0 +1,52 @@
+.full-frame-scaffold-news-banner {
+    @include box-sizing();
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 16px;
+    background-color: #bb1919;
+}
+.full-frame-scaffold-news-banner__logo {
+    width: 100%;
+    max-width: 976px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 38px;
+    background-image: url('http://news.bbcimg.co.uk/news/special/2015/newsspec_12716/content/english/img/news.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 9px;
+    background-size: 240px;
+}
+
+.full-frame-scaffold-news-banner__btn {
+  height: 38px;
+  width: 104px;
+  text-decoration: none;
+  display: block;
+  text-indent: -9999px;
+  margin-left: -12px;
+}
+
+@media (min-width: 1009px) {
+    .full-frame-scaffold-news-banner {
+        padding: 0;
+    }
+}
+
+.full-frame-scaffold-browser-support {
+    width: 100%;
+    margin: 0;
+    padding: 8px 16px;
+    background-color: #333333;
+}
+.full-frame-scaffold-browser-support__message {
+    width: 90%;
+    max-width: 976px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 8px 0 24px;
+    font-size: 14px;
+    line-height: 20px;
+    background: url('http://news.bbcimg.co.uk/news/special/2015/newsspec_12716/content/english/img/news--icons-sprite.png') no-repeat -6px -6110px;
+    color: #ffffff;
+}

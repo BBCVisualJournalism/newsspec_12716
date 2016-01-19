@@ -1,0 +1,69 @@
+/* separate your sass into different files to keep it maintainable!  */
+
+.newsspec_12716__standard-content-wrapper {
+    padding: 0 8px;
+    overflow: hidden;
+}
+
+.newsspec_12716__title {
+    clear: both;
+    text-align: center;
+    font-size: 1.250em;
+    margin-top: 40px
+}
+
+.newsspec_12716__subtitle {
+    text-align: center;
+    font-size: 1.125em;
+}
+
+p {
+    width: 100%;
+    max-width: 646px;
+    margin: 18px auto 0 auto;
+}
+
+.newsspec_12716__source {
+    font-size: 0.75em;
+}
+
+.newsspec_12716__svg-alternative {
+    width: 100%;
+}
+
+.newsspec_12716__replay {
+    cursor: pointer;
+    display: block;
+    background-color: #006666;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 8px;
+    border: none;
+    -webkit-appearance: button;
+}
+.newsspec_12716__replay:hover {
+    background-color: #007f7f;
+}
+.newsspec_12716__replay:active,
+.newsspec_12716__replay:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+@include respondMinMax(600px, false) {
+
+    .newsspec_12716__title {
+        text-align: center;
+        font-size: 1.500em;
+    }
+
+    .newsspec_12716__subtitle {
+        text-align: center;
+        font-size: 1.250em;
+    }
+
+    .newsspec_12716__source {
+        font-size: 0.813em;
+    }
+}

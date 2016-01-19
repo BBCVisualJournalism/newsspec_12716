@@ -1,0 +1,31 @@
+{{= include('includes/newsBanner_en-GB.tmpl') }}
+<!--[if lt IE 9]>
+<div class="browser-notify">
+    <div class="browser-notify__banner">
+        <div class="browser-notify__icon"></div>
+        <span>This site is optimised for modern web browsers, and does not fully support your version of Internet Explorer</span>
+    </div>
+</div>
+<![endif]-->
+
+<style>
+{{= include("../scss/news_special/loading.css") }}
+</style>
+
+{{=  include("./includes/inline.js.tmpl") }}
+
+<div class="main ns_{{= languageConfig.languageLookup[vocab_dir].direction }}">
+
+    <div id="loading-spinner" class="bbc-news-visual-journalism-loading-spinner"></div>
+    <div class="tempShareToolsHolder"></div>
+
+    {{= include("./titleScreen.tmpl") }}
+    <div class="newsspec_12716__standard-content-wrapper">
+        {{= include("./temperature.tmpl") }}
+        {{= include("./greenhouseGases.tmpl") }}
+        {{= include("./ice.tmpl") }}
+        {{= include("./future.tmpl") }}
+        {{= include("./actions.tmpl") }}
+    </div>
+</div>
+{{=  include("./creditsShareAndMore.tmpl") }}

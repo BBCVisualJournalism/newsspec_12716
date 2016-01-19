@@ -1,0 +1,26 @@
+<div class="ns_creditsHolder ns_{{= languageConfig.languageLookup[vocab_dir].direction }}">
+	<div class="ns_creditsLineThin"></div>
+	<h2>{{= credits_title}}</h2>
+	<p>{{= credits_para}}</p>
+	<h2 class="ns_shareThisStoryTitle">Share this story <a href="http://www.bbc.co.uk/help/web/sharing.shtml">about sharing</a></h2>
+	<a href="mailto:?subject=<!-- urlencodeme-start -->{{= email_subject }}<!-- urlencodeme-end -->&amp;body=<!-- urlencodeme-start -->{{= email_body }} {{= email_share_url }}<!-- urlencodeme-end -->" class="ns_shareIconLink ns_shareEmailIcon">
+		<img src="{{= pathStatic }}/{{= vocab_dir }}/img/share-icons/email.png" alt="email share">
+	</a>
+	<a href="http://www.facebook.com/sharer.php?u=<!-- urlencodeme-start -->{{= facebook_share_url }}<!-- urlencodeme-end -->" class="ns_shareIconLink ns_shareFacebookIcon">
+		<img src="{{= pathStatic }}/{{= vocab_dir }}/img/share-icons/facebook.png" alt="facebook share">
+	</a>
+	<a href="https://twitter.com/intent/tweet?text=<!-- urlencodeme-start -->{{= twitter_message }}<!-- urlencodeme-end -->&amp;url=<!-- urlencodeme-start -->{{= twitter_share_url }}<!-- urlencodeme-end -->" data-social-url="https://twitter.com/intent/tweet?text=<!-- urlencodeme-start -->{{= twitter_message }}<!-- urlencodeme-end -->&amp;url=" data-target-url="<!-- urlencodeme-start -->{{= twitter_share_url }}<!-- urlencodeme-end -->" class="ns_shareIconLink ns_shareTwitterIcon">
+		<img src="{{= pathStatic }}/{{= vocab_dir }}/img/share-icons/twitter.png" alt="twitter share">
+	</a>
+	<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<!-- urlencodeme-start -->{{= linkedin_share_url }}<!-- urlencodeme-end -->&amp;title=<!-- urlencodeme-start -->l{{= linkedin_title }}<!-- urlencodeme-end -->&amp;summary=<!-- urlencodeme-start -->{{= linkedin_summary }}<!-- urlencodeme-end -->&amp;source=<!-- urlencodeme-start -->BBC Sport<!-- urlencodeme-end -->" class="ns_shareIconLink ns_shareLinkedInIcon">
+		<img src="{{= pathStatic }}/{{= vocab_dir }}/img/share-icons/linkedin.png" alt="linked in share">
+	</a>
+	<div class="ns_onwardJourneys">
+		<div class="ns_creditsLineThick"></div>
+		<h2>{{= onward_journey_title}}</h2>
+		<div class="ns_creditsLineThin"></div>
+		<a href="{{= onward_journey_link_url_1 }}">{{= onward_journey_link_text_1 }}</a>
+		<a href="{{= onward_journey_link_url_2 }}">{{= onward_journey_link_text_2 }}</a>
+		<a href="{{= onward_journey_link_url_3 }}">{{= onward_journey_link_text_3 }}</a>
+	</div>
+</div>

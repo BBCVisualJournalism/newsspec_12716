@@ -1,0 +1,171 @@
+.newsspec-12716--bar-chart{
+    display: none;
+    width: 100%;
+    max-width: 650px;
+    margin: 30px auto;
+
+   .newsspec-12716--bar-chart--headers{
+       overflow: hidden;
+       padding-left: 14px;
+
+        h4{
+            float: left;
+            width: 28.7%;
+            text-align: center;
+            font: normal 20px Helvetica;
+            margin: 10px 12px 10px 0;
+
+            padding: 5px 0;
+            border-left: 5px solid #212121;
+            border-right: 5px solid #212121;
+            box-sizing: border-box;
+            transition: 0.5s background-color;
+            color: #000;
+            background-color: #fff;
+        }
+        .newsspec-12716--bar-chart--header--girls {
+            margin-right: 0;
+        }
+
+        .newsspec-12716--bar-chart--header--active{
+            background-color: #F39B55;
+            font-weight: bold;
+        }
+    }
+    .newsspec-12716-bar-chart--hr{
+        background-color: #fff;
+        height: 1px;
+        border: 0;
+        margin: 0 24px 0 24px;
+    }
+    .newsspec-12716-bar-chart--top-key{
+        position: absolute;
+        ul {
+            padding: 0;
+            li {
+                color: #fff;
+                list-style: none;
+                display: inline-block;
+                margin: 0;
+                font: 18px Helvetica;
+            }
+            .newsspec-12716-bar-chart--top-key90  span {
+                width: 16px;
+                background: #facaa4;
+                  display: inline-block;
+                  height: 16px;
+                  margin: -2px 10px 0;
+            }
+            .newsspec-12716-bar-chart--top-key14  span {
+                width: 16px;
+                background: #f39b55;
+                display: inline-block;
+                height: 16px;
+                margin: -2px 10px 0;
+            }
+        }
+    }
+
+    .newsspec-12716-bar-chart--bars{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        padding: 0 0 0 14px;
+
+        .newsspec-12716-bar-chart--top-label{
+            font: 18px Helvetica;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            right: 14px;
+            padding: 10px 20px;
+        }
+        .newsspec-12716-bar-chart--item{
+            box-sizing: border-box;
+            width: 14%;
+            height: 100%;
+            display : table;
+            float: left;
+            border: 0;
+            border-right: 5px solid #212121;
+            border-left: 5px solid #212121;
+        }
+        .newsspec-12716-bar-chart--item--label,
+        .newsspec-12716-bar-chart--item--label-last,{
+            display : table-cell;
+            padding-bottom: 15px;
+            text-align: center;
+            vertical-align : bottom;
+            font: 16px Helvetica;
+            color: #bdbdbd;
+        }
+        .newsspec-12716-bar-chart--item--bar{
+            display: table-row;
+            background-color: #facaa4;
+            height: 0;
+        }
+        .newsspec-12716-bar-chart--item--bar-last{
+            display: table-row;
+            background-color: #f39b55;
+            height: 0;
+        }
+        .newsspec-12716-bar-chart--item-margin{
+            margin-right: 12px;
+        }
+    }
+
+}
+
+.newsspec_12716--source {
+    font: 16px Helvetica;
+    color: #bdbdbd;
+}
+
+@include respondMinMax(768px, false){
+    .newsspec_12716--vis-key-label {
+      max-width: 484px;
+    }
+    .newsspec-12716--bar-chart {
+        .newsspec-12716-bar-chart--hr{
+            margin: 0;
+        }
+        .newsspec-12716-bar-chart--bars {
+            .newsspec-12716-bar-chart--item-margin{
+                margin-right: 44px;
+            }
+        }
+        .newsspec-12716--bar-chart--headers {
+                h4 {
+                    margin-right: 44px;
+                }
+        }
+    }
+    .newsspec-12716-bar-chart--item--label,
+    .newsspec-12716-bar-chart--item--label-last,{
+        font: 18px Helvetica;
+    }
+}
+@include respondMinMax(1008px, false){
+    .newsspec_12716--vis-key-label {
+      max-width: 640px;
+    }
+
+    .newsspec-12716--bar-chart {
+        .newsspec-12716-bar-chart--hr {
+            margin: 0 24px 0 0;
+        }
+        .newsspec-12716-bar-chart--bars {
+            padding: 0;
+            .newsspec-12716-bar-chart--item-margin{
+                margin-right: 44px;
+            }
+        }
+        .newsspec-12716--bar-chart--headers {
+            padding: 0;
+                h4 {
+                    width: 28%;
+                    margin-right: 44px;
+                }
+        }
+    }
+}

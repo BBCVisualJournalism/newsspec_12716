@@ -1,0 +1,80 @@
+.newsspec_12716__onward-journeys {
+    font-size: 16px;
+    width: 66%;
+    max-width: 640px;
+    margin: 60px auto 46px;
+    color: #ffffff;
+
+    .newsspec_12716__group__header {
+        border-top: 8px solid #333333;
+        padding: 8px 0;
+        border-bottom: 1px solid #333333;
+        margin-bottom: 16px;
+    }
+
+    .newsspec_12716__group__body {
+
+        .newsspec_12716__group__img {
+            margin: 0 16px 12px 0;
+            width: 165px;
+            height: 84px;
+        }
+    }
+
+    h2 {
+        font-size: 1.500em;
+        line-height: 1.00em;
+        color: #ffffff;
+        text-rendering: optimizeLegibility;
+        letter-spacing: -0.0425em;
+        font-weight: bold;
+        padding: 0 0 4px 0;
+        margin: 0 auto;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 1.00em;
+        line-height: 1.25em;
+        font-weight: bold;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .newsspec_12716--pub-date {
+            display: block;
+             padding: 8px 0;
+             color: #bdbdbd;
+             font-weight: normal;
+             font-size: 0.875em;
+        }
+    }
+}
+
+@include respondMinMax(600px, false){
+    .newsspec_12716__group__body {
+        .newsspec_12716__group__img {
+            float: left;
+        }
+    }
+}
+
+@include respondMinMax(768px, false){
+    .newsspec_12716__onward-journeys {
+        max-width: 484px;
+    }
+}
+
+@include respondMinMax(1008px, false){
+    .newsspec_12716__onward-journeys {
+        max-width: 640px;
+    }
+}

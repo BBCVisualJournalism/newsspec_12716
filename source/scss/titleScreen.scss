@@ -1,0 +1,61 @@
+.newsspec_12716__title-screen {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #a9d7db;
+    line-height: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url('/news/special/2015/newsspec_12716/content/english/img/climate_change_illustration-06.png');
+
+    .newsspec_12716__title-screen__main-title {
+        position: absolute;
+        top: 8%;
+        margin: 0 10%;
+        width: 80%;
+        font-size: 2.0em;
+        line-height: 1.125em;
+        font-weight: bold;
+        text-align: center;
+    } 
+}
+    
+.newsspec_12716__title-screen__main-standfirst {
+    padding: 0 8px;
+} 
+
+@include respondMinMax (360px, false) {
+    .newsspec_12716__title-screen {
+        height: 572px;
+    }
+}
+
+@include respondMinMax (460px, false) {
+    .newsspec_12716__title-screen {
+        
+        .newsspec_12716__title-screen__main-title {
+            font-size: 2.6em;
+        }
+    }
+}
+
+@include respondMinMax (600px, false) {
+    .newsspec_12716__title-screen {
+        
+        .newsspec_12716__title-screen__main-title {
+            font-size: 3.0em;
+        }
+    }
+}
+
+@include respondMinMax (1008px, false) {
+    .newsspec_12716__title-screen {
+        height: 692px;
+        
+        .newsspec_12716__title-screen__main-title {
+            top: 12%;
+            font-size: 4.0em;
+        }
+    }
+}

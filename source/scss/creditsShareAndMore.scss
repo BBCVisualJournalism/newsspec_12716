@@ -1,0 +1,116 @@
+$creditsFontColour:#222;
+
+.ns_creditsHolder {
+	width:100%;
+	max-width:704px;
+	margin:52px auto 0 auto;
+	padding: 0 40px;
+
+	h2 {
+		font-size: 24px;
+		font-weight: bold;
+		font-style: normal;
+		color: $creditsFontColour;
+
+		a {
+			text-decoration: none;
+			font-size: 12px;
+			font-weight: normal;
+			color: $creditsFontColour;			
+		}
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: normal;
+		font-style: normal;
+		margin: 20px auto;
+		color: $creditsFontColour;
+	}
+
+	.ns_creditsLineThin {
+		width:100%;
+		height:1px;
+		background-color: rgb(189, 189, 189);
+	}
+
+	.ns_creditsLineThick {
+		width:100%;
+		height:8px;
+		background-color: rgb(220, 220, 220);
+	}
+
+	.ns_shareThisStoryTitle {
+		margin-top: 32px;
+		margin-bottom: 8px;
+	}
+
+	.ns_shareIconLink {
+		width: 44px;
+		height:32px;
+		text-decoration: none;
+		display: inline-block;
+		margin-right:8px;
+
+		img {
+			width:100%;
+			height:100%;
+		}
+	}
+
+	.ns_shareIconLink:hover {
+		text-decoration: underline;
+	}
+
+	.ns_shareEmailIcon {
+		background-color: #615f5d;
+	}
+
+	.ns_shareFacebookIcon {
+		background-color: #3c5a98;
+	}
+
+	.ns_shareTwitterIcon {
+		background-color: #47c7fa;
+	}
+
+	.ns_shareLinkedInIcon {
+		background-color: #0077b5;
+	}
+
+	.ns_onwardJourneys {
+		margin-top: 32px;
+		margin-bottom:32px;
+
+		h2 {
+			margin-top: 8px;
+			margin-bottom: 8px;
+		}
+
+		.ns_creditsLineThin {
+			margin-bottom: 16px;
+		}
+
+		a {
+			color: $creditsFontColour;
+			font-size: 16px;
+			font-weight: bold;
+			text-decoration: none;
+			display: block;
+			margin-bottom: 8px;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		span {
+			color: $creditsFontColour;
+			font-size: 16px;
+			line-height:20px;
+			display: block;
+			margin-top: 8px;
+		}
+	}
+}

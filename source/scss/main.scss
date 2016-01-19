@@ -1,0 +1,32 @@
+.main {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.375em;
+	color: #404040;
+}
+
+.b-g-p, .b-r .b-g-p {
+    padding: 0 8px;
+    box-sizing: content-box;
+}
+
+@import "news_special/defaults";
+@import "app";
+@import "creditsShareAndMore";
+
+@import "news_special/mixins";
+/*@import "newsBanner";*/
+@import "titleScreen";
+@import "lineChart";
+@import "temperature";
+@import "greenhouseGases";
+@import "future";
+@import "iceCaps";
+@import "barChart";
+@import "onwardJourneys";
+@import "actions";
+/*@import "shareTools";*/
+
+.ns_rtl {
+	direction: rtl;
+}

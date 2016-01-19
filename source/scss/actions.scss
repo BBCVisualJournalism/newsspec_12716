@@ -1,0 +1,253 @@
+$top_ten_hundred_percent: 890px;
+
+
+.newsspec_12716__top-ten-vis {
+    margin-top: 32px;
+    direction: ltr;
+}
+
+.newsspec_12716__top-ten-vis_country {
+    display: table;
+    width: 288px;
+    margin: 0 auto 1px;
+    &__china {
+        height: $top_ten_hundred_percent * 0.24;
+        .newsspec_12716__top-ten-vis__block {
+            background-color: #598a00;
+        }
+    }
+    &__usa {
+        height: $top_ten_hundred_percent * 0.12;
+        .newsspec_12716__top-ten-vis__block {
+            background-color: #61900d;
+        }
+    }
+    &__eu {
+        height: $top_ten_hundred_percent * 0.09;
+        .newsspec_12716__top-ten-vis__block {
+            background-color: #6a961a;
+        }
+    }
+    &__india {
+        height: $top_ten_hundred_percent * 0.06;
+        .newsspec_12716__top-ten-vis__block {
+            background-color: #729c26;
+        }
+    }
+    &__brazil {
+        height: $top_ten_hundred_percent * 0.06;
+        .newsspec_12716__top-ten-vis__block {
+            background-color: #7aa133;
+        }
+    }
+    &__russia {
+        height: $top_ten_hundred_percent * 0.05;
+        .newsspec_12716__top-ten-vis__block {
+            background-color: #83a740;
+        }
+    }
+    &__japan {
+        height: $top_ten_hundred_percent * 0.03;
+        .newsspec_12716__top-ten-vis__block {
+            background-color: #8bad4d;
+        }
+    }
+    &__canada {
+        height: $top_ten_hundred_percent * 0.02;
+        .newsspec_12716__top-ten-vis__block {
+            background-color: #93b359;
+        }
+    }
+    &__dr_congo {
+        height: $top_ten_hundred_percent * 0.015;
+        .newsspec_12716__top-ten-vis__block {
+            background-color: #9bb966;
+        }
+    }
+    &__indonesia {
+        height: $top_ten_hundred_percent * 0.015;
+        .newsspec_12716__top-ten-vis__block {
+            background-color: #a4bf73;
+        }
+    }
+}
+
+.newsspec_12716__top-ten-vis__block, .newsspec_12716__top-ten-vis__label {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.newsspec_12716__top-ten-vis__block {
+    width: 25%;
+}
+
+.newsspec_12716__top-ten-vis__label {
+    width: 75%;
+    line-height: 10px;
+    span {
+        position: relative;
+    }
+}
+
+.newsspec_12716__top-ten-vis__label__countryname {
+    padding-left: 26px;
+    font-size: 0.875em;
+    display: inline-block;
+}
+
+.newsspec_12716__top-ten-vis__label__percentage {
+    padding-left: 3px;
+    font-size: 0.938em;
+    font-weight: bold;
+}
+
+.newsspec_12716__top-ten-vis__label__countryname::before {
+    content: '';
+    width: 26px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    background-color: #222;
+}
+
+.newsspec_12716__top-ten-source,
+.newsspec_12716__ave-warming-source {
+    width: 288px;
+    margin: 10px auto;
+}
+
+@include respondMinMax(600px, false) {
+    .newsspec_12716__top-ten-vis__block, .newsspec_12716__top-ten-vis__label {
+        width: 50%;
+    }
+
+    .newsspec_12716__top-ten-vis_country, .newsspec_12716__top-ten-source {
+        width: 400px;
+    }
+
+    .newsspec_12716__ave-warming-source {
+        width: 568px;
+    }
+}
+
+.newsspec_12716__ave-warming-chart {
+    direction: ltr;
+    position: relative;
+    width: 288px;
+    margin: 32px auto 0;
+    &__bar {
+        display: table;
+        &__label, &__value {
+            text-align: right;
+        }
+        &__label {
+            display: table-cell;
+            vertical-align: middle;
+            width: 110px;
+            max-width: 110px;
+            height: 84px;
+            border-right: solid 2px #000;
+            padding-right: 14px;
+            font-size: 1.0em;
+        }
+        &__value {
+            position: relative;
+            height: 76px;
+            margin: 0 0 8px;
+            span {
+                color: #fff;
+                font-size: 1.500em;
+                font-weight: bold;
+                position: absolute;
+                right: 12px;
+                top: (76px / 2) - 12;
+            }
+        }
+        &--1 {
+            .newsspec_12716__ave-warming-chart__bar__value {
+                width: (178px * (4.5 / 4.5));
+                background-color: #cc0000;
+            }
+        }
+        &--2 {
+            .newsspec_12716__ave-warming-chart__bar__value {
+                width: (178px * (3.6 / 4.5));
+                background-color: #db4946;
+            }
+        }
+        &--3 {
+            .newsspec_12716__ave-warming-chart__bar__value {
+                width: (178px * (2.7 / 4.5));
+                background-color: #ea928b;
+                margin: 0;
+            }
+            .newsspec_12716__ave-warming-chart__bar__label {
+                height: 76px;
+            }
+        }
+    }
+    &__threshold-line {
+        position: absolute;
+        font-size: 1.0em;
+        left: (110px + (178px * (2 / 4.5)));
+        margin-left: -12px;
+        top: -20px;
+        &::after {
+            content: '';
+            height: 246px;
+            width: 0;
+            border-right: 2px dashed #222;
+            position: absolute;
+            left: 10px;
+            top: 18px;
+        }
+    }
+}
+
+@include respondMinMax(false, 599px) {
+    .newsspec_12716__ave-warming-chart__bar--3 .newsspec_12716__ave-warming-chart__bar__value span {
+        color: #cc0000;
+        right: auto;
+        left: (178px * (2.7 / 4.5) + 8px);
+    }
+}
+
+@include respondMinMax(600px, false) {
+    .newsspec_12716__ave-warming-chart {
+        width: 568px;
+        &__bar--1 {
+            .newsspec_12716__ave-warming-chart__bar__value {
+                width: (458px * (4.5 / 4.5));
+            }
+        }
+        &__bar--2 {
+            .newsspec_12716__ave-warming-chart__bar__value {
+                width: (458px * (3.6 / 4.5));
+            }
+        }
+        &__bar--3 {
+            .newsspec_12716__ave-warming-chart__bar__value {
+                width: (458px * (2.7 / 4.5));
+            }
+        }
+        &__threshold-line {
+            position: absolute;
+            font-size: 1.0em;
+            left: 110 + (458px * (2 / 4.5));
+            margin-left: -12px;
+            top: -20px;
+            &::after {
+                content: '';
+                height: 246px;
+                width: 0;
+                border-right: 2px dashed #222;
+                position: absolute;
+                left: 10px;
+                top: 18px;
+            }
+        }
+    }
+}

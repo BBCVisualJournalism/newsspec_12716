@@ -48,6 +48,6 @@ module.exports = function (grunt) {
     });
 
 	grunt.registerTask('images', function () {
-        grunt.task.run('copy:standardImages', 'responsive_images', 'imagemin');
+        grunt.task.run('copy:standardImages', 'responsive_images');
     });
 };

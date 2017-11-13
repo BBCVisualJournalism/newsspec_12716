@@ -9,7 +9,7 @@ define(['lib/news_special/bootstrap', 'd3', 'utils'], function (news, d3, Utils)
             this.d3El = d3.select(selector);
             this.data = data;
             this.minY = -0.8;
-            this.maxY = 1;
+            this.maxY = 1.2;
             this.anim = 0;
             this.animStopped = false;
             this.hasAnimatedIn = false;
@@ -21,26 +21,26 @@ define(['lib/news_special/bootstrap', 'd3', 'utils'], function (news, d3, Utils)
             this.lowestEntries = [
                 1908,
                 1911,
-                1904,
                 1909,
+                1904,
                 1910,
                 1907,
-                1890,
                 1903,
-                1893,
-                1912
+                1912,
+                1890,
+                1893
             ];
             this.highestEntries = [
+                2016,
                 2015,
+                2017,
                 2014,
                 2010,
                 2013,
                 2005,
                 2009,
                 1998,
-                2012,
-                2007,
-                2006
+                2012
             ];
 
             this.init();
@@ -210,7 +210,7 @@ define(['lib/news_special/bootstrap', 'd3', 'utils'], function (news, d3, Utils)
             multiLineChart.yAxisContainer.selectAll('*').remove();
 
             var yGroup = multiLineChart.yAxisContainer.append('g');
-            for (var j = -0.8; j <= 1; j += 0.2) {
+            for (var j = multiLineChart.minY; j <= multiLineChart.maxY; j += 0.2) {
                 yPos = multiLineChart.yScale(j);
 
                 yGroup.attr('class', 'y-axis-ticks');
@@ -247,13 +247,13 @@ define(['lib/news_special/bootstrap', 'd3', 'utils'], function (news, d3, Utils)
             // // draw y axis extremes labels
             yGroup.append('text')
                 .attr('x', -52)
-                .attr('y', multiLineChart.yScale(-0.8) + 4)
+                .attr('y', multiLineChart.yScale(multiLineChart.minY) + 4)
                 .attr('text-anchor', 'end')
                 .attr('class', 'newsspec_12716__temperature-chart__label--extremes')
                 .text(news.$('.newsspec_12716__line-chart__key--colder').text());
             yGroup.append('text')
                 .attr('x', -52)
-                .attr('y', multiLineChart.yScale(1) + 4)
+                .attr('y', multiLineChart.yScale(multiLineChart.maxY) + 4)
                 .attr('text-anchor', 'end')
                 .attr('class', 'newsspec_12716__temperature-chart__label--extremes')
                 .text(news.$('.newsspec_12716__line-chart__key--hotter').text());
@@ -372,6 +372,7 @@ define(['lib/news_special/bootstrap', 'd3', 'utils'], function (news, d3, Utils)
             news.$('.newsspec_12716__temperature-chart__header__year').html(multiLineChart.data[i][0]);
 
             if (i === multiLineChart.data.length - 1) {
+            news.$('.newsspec_12716__temperature-chart__header__year').html(this.highestEntries[0]);
                 news.$('.newsspec_12716__temperature-chart__header__rank--warmest-0').css('opacity', 1);
             }
 

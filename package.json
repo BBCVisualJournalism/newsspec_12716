@@ -5,7 +5,7 @@
     "url": "http://github.com/BBCVisualJournalism/newsspec_12716"
   },
   "description":    "GD climate change",
-  "version":        "0.2.38",
+  "version":        "0.2.40",
   "devDependencies": {
     "casperjs":                         "1.1.0-beta3",
     "grunt":                            "~0.4.0",
